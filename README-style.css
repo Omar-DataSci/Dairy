@@ -1,0 +1,1626 @@
+:root {
+  --primary-color: #800020;
+  --secondary-color:  rgb(128, 0, 32);
+  --bourgandy-rgb: 128, 0, 32; /* Bourgandy */
+  --pink-rgb: 244, 149, 191;
+  --petal-color: #f495bf;
+  --pulse: heartbeat;
+
+  --text-color: #ffffff;
+  --bg-color: #121314;
+  --text-light: #f8f8f2;
+  --text-color: 255,255,255;
+  
+  --font-serif-book: 'EB Garamond', Garamond, Baskerville, Georgia, serif;
+
+
+
+  --terminal-bg:rgba(40 42 53);
+  --terminal-txt-font:Cascadia Mono;
+  --terminal-color: #f8f8f2d7;
+  --terminal-select:#44475A;
+
+  --git-log:"c897b40 (HEAD -> main, origin/main, origin/HEAD) "
+}
+
+
+body {
+    background-color: #121314 !important; 
+    color: #d4d4d4 !important;          
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 20px;
+    /* font-size: 2vw; */
+    max-width: 100dvw;
+    margin: 0 0 0 20px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    white-space: normal;
+
+
+}
+body::selection {
+    background: var(--primary-color);
+    animation: var(--pulse);
+
+    
+}
+
+
+/* تحسين مظهر الروابط وتخليصها من اللون الأزرق التقليدي */
+a {
+    color: var(--petal-color) !important;
+ /* اللون الأزرق البرمجي الهادئ */
+    text-decoration: dashed;
+    font-style: oblique;
+    text-shadow: 0px 0px 2px var(--text-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul, ol {
+    padding-left: 2em;
+    color: #d4d4d4;
+}
+
+
+
+
+
+
+
+
+
+/* My first Animation.. */
+
+/* Fading Mirage Animation */
+
+/* Description:
+
+Gave the user control. By pausing it on hover, it allow the reader to "catch" the mirage before it fades away completely.
+
+*/
+.mirage ,mirage{
+    opacity:  0.6;
+    animation: fading 5s linear infinite alternate;
+}
+
+
+.mirage:hover,mirage:hover {
+    cursor: pointer;
+    animation-play-state: paused;
+
+}
+
+@keyframes fading {
+    0% {
+        letter-spacing: 0px;
+        opacity:  0.9;
+        text-shadow: 0px 0px 8px #cfc4c4;
+    }
+    15% {
+        letter-spacing: 1px ;
+        filter: blur(1px)   
+    }
+    25% {
+        letter-spacing: 3px;
+        filter: blur(2px)    
+    }
+    50% {
+        letter-spacing: 5px;
+        filter: blur(3px)   
+    }
+    100% {
+        letter-spacing: 7px;
+        filter: blur(5px)
+    }
+}
+
+
+/* --- Headings Transition --- */
+h1  {
+    color:#c9d1d9;
+    font-size: 2.5rem;
+    letter-spacing: 0px;
+    /* Set up transition for letter-spacing change */
+    transition: letter-spacing 0.4s ease-out, color 0.4s ease-out;
+}
+
+h2 , h3 {
+    letter-spacing: 0px;
+    /* Set up transition for letter-spacing change */
+    transition: letter-spacing 0.4s ease-out, color 0.4s ease-out;
+}
+
+/* When you hover over the title, the letters smoothly expand apart */
+h1:hover , h2:hover , h3:hover {
+    color:#ffffff !important;
+    text-shadow: 0 0 2px #800020;
+    letter-spacing: 2px; /* Expands individual character clearance */
+    cursor: default;
+}
+
+/* ===================== Ghost-Trail =====================*/
+
+.ghost-trail span {
+    display: inline-block;
+    color: rgba(var(--text-color), 0.3);
+    transform: skewX(18deg);
+    transition: color 3s ease-in-out, transform 0.9s ease-out;
+}
+
+.ghost-trail span:nth-child(1) { transition-delay: 480ms; }
+.ghost-trail span:nth-child(2) { transition-delay: 400ms; }
+.ghost-trail span:nth-child(3) { transition-delay: 320ms; }
+.ghost-trail span:nth-child(4) { transition-delay: 240ms; }
+.ghost-trail span:nth-child(5) { transition-delay: 160ms; }
+.ghost-trail span:nth-child(6) { transition-delay: 80ms; }
+.ghost-trail span:nth-child(7) { transition-delay: 0ms; }
+
+.ghost-trail:hover span {
+    color: rgba(var(--text-color), 1);
+    transform: skewX(0);
+}
+
+.ghost-trail:hover span:nth-child(1) { transition-delay: 0ms; }
+.ghost-trail:hover span:nth-child(2) { transition-delay: 80ms; }
+.ghost-trail:hover span:nth-child(3) { transition-delay: 160ms; }
+.ghost-trail:hover span:nth-child(4) { transition-delay: 240ms; }
+.ghost-trail:hover span:nth-child(5) { transition-delay: 320ms; }
+.ghost-trail:hover span:nth-child(6) { transition-delay: 400ms; }
+.ghost-trail:hover span:nth-child(7) { transition-delay: 480ms; }
+
+
+
+/* ======================= Guilt-Trip ======================== */
+
+[data-callout="ghost-trail"] span {
+    display: inline-block;
+    color: rgba(var(--text-color),0.3) ;
+    transform:skewX(18deg);
+    transition: color 3s ease-in-out , transform 0.9s ease-out;
+
+}
+
+:root {
+
+    --bourgandy-rgb: 128, 0, 32; /* Bourgandy */
+    --bg-color: #121314;
+    --text-color: #e7e4e4;
+    --real-text-color: #ffb3c1;
+
+    /* Contents Tags */
+
+    --confession: "I kept writing in the dark  ...I was afraid losing you";
+    --reproach:"Shouldn't you at least tell me why did you leave..";
+    --truth:"I was afraid leaving me one day not knowing why";
+    --dream:"I think it's just Me...";
+    --day-39:"📝 Log Day 39 :I Was Supposed To Be Finishing Things";
+    --day-38:"📝 Log Day 38 : What the room won't let you see.";
+    --day-37:"📝 Log Day 37 : Not your friend anymore?";
+    --day-35:"📝 Log Day 35 : Origins";
+    --day-31:"📝 Log Day 31 : It Smiled.";
+    --day-40:"📝 Log Day 40 : Timeline Branch Detected";
+    --day-23:"📝 Log Day 23 : So Far Yet So Close";
+    --day-21:"📝 Log Day 21 : Things Change When You Look Away";
+    --day-17:"📝 Log Day 17 : No. it was a Bug.";
+    --day-11:"📝 Log Day 11 : Maybe Not.";
+    --day-13:"📝 Log Day 13 : A writer needs a reader";
+    --day-00:"📝 Log Day 00 : The Architect";
+
+}
+
+[data-callout="guilt-trip"],guilt{
+    color: #ffffff;
+    display: inline-block;
+    position: relative;
+}
+
+
+[data-callout="guilt-trip"]::after,guilt::after{
+    content: var(--content);
+    position: absolute;
+    height: 30px;
+    min-width: 1000px;
+    left: 0;
+    top: 0;
+    background: var(--bg-color);
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 3s ease;
+    
+}
+
+[data-callout="guilt-trip"]:hover::after,guilt:hover::after {opacity: 1;}
+
+/* Search Engine */
+
+[type="confession"]{ --content: var(--confession);}
+
+[type="reproach"]{ --content: var(--reproach);}
+
+[type="truth"]{ --content: var(--truth);}
+
+[type="dream"]{ --content: var(--dream);}
+
+[type="day-40"]{ --content: var(--day-40);}
+[type="day-39"]{ --content: var(--day-39);}
+[type="day-38"]{ --content: var(--day-38);}
+[type="day-37"]{ --content: var(--day-37);}
+[type="day-35"]{ --content: var(--day-35);}
+[type="day-31"]{ --content: var(--day-31);}
+[type="day-29"]{ --content: var(--day-29);}
+[type="day-23"]{ --content: var(--day-23);}
+[type="day-21"]{ --content: var(--day-21);}
+[type="day-17"]{ --content: var(--day-17);}
+[type="day-13"]{ --content: var(--day-13);}
+[type="day-12"]{ --content: var(--day-12);}
+[type="day-11"]{ --content: var(--day-11);}
+[type="day-00"]{ --content: var(--day-00);}
+
+/* ====================== phoenix-shatter ================= */
+
+.phoenix-shatter, t {
+    display: inline-block;
+    color: #c9d1d9 !important;
+    font-weight: bold;
+    /* حلقة حركة مستمرة مدتها 4 ثوانٍ تتناوب بسلاسة */
+    animation: shatter-loop 4s ease-in-out infinite alternate;
+}
+
+
+@keyframes shatter-loop {
+    0%, 40% {
+        /* النص سليم ومستقر في البداية */
+        transform: skew(0deg) scale(1);
+        text-shadow: none;
+        filter: blur(0px);
+    }
+    50% {
+        /* بداية الشرخ والاهتزاز قبل الانفجار */
+        transform: skewX(-4deg);
+        text-shadow: 1px 0 #800020;
+    }
+    60% {
+        /* لحظة التشظي والانشطار الكامل (تأثير الشظايا بالظلال المتباعدة) */
+        transform: skewX(12deg) translateY(-2px);
+        text-shadow: 
+            -4px -3px 0 rgba(128, 0, 32, 0.8),  /* شظية علوية بورغاندي */
+             4px  3px 0 rgba(230, 184, 194, 0.6); /* شظية سفلية ناعمة */
+        filter: blur(0.5px);
+    }
+    70% {
+        /* أقصى تباعد للشظايا كأنه مكسور تماماً */
+        transform: skewX(-8deg) translateY(1px);
+        text-shadow: 
+             5px -2px 0 rgba(128, 0, 32, 0.7),
+            -5px  2px 0 rgba(255, 255, 255, 0.5);
+    }
+    85%, 100% {
+        /* يعود ويلتحم تماماً كالفينيق ليصبح مقروءاً قبل أن تبدأ الدورة من جديد */
+        transform: skew(0deg) scale(1);
+        text-shadow: none;
+        filter: blur(0px);
+    }
+}
+
+
+
+
+
+
+/*  SH */
+
+
+u {
+    text-decoration: none;
+    font-style: normal;
+    display: inline-block;
+    color: #ffffff !important;
+    font-weight: bold;
+    text-shadow: 0 0 2px #800020;
+    animation: heartbeat 2s infinite;
+  }
+
+
+  @keyframes heartbeat {
+    0% { opacity: 0.4; }
+    50% { opacity: 1; }
+    100% { opacity: 0.4; }
+  }
+
+
+b{
+    font-style: normal;
+    display: inline-block;
+    color: #ffffff !important;
+    font-weight: bold;
+    text-shadow: 0 0 2px #800020;
+    animation: soul-breathe 3s infinite ease-in-out alternate;
+}
+
+@keyframes soul-breathe {
+    0% { text-shadow: 0 0 2px #800020, 0 0 4px #800020; opacity: 0.8; }
+    100% { text-shadow: 0 0 8px #800020, 0 0 14px #e6b8c2; opacity: 1; }
+}
+
+
+
+s{
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff !important;
+    animation: melt-drop 3.5s infinite ease-in-out alternate;
+}
+
+
+
+i{
+    font-style: normal;
+    filter: blur(0.8px);
+    animation: fade-out-ghost 2s ease-out infinite alternate;
+    display: inline-block;
+}
+
+@keyframes fade-out-ghost {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+        filter: blur(0.3px);
+    }
+    50% {
+        transform: translateY(+2px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(+5px) scale(0.9);
+        opacity: 0;
+        filter: blur(0px);
+    }
+}
+
+
+
+.day-tag ,day {
+    background-color: #800020;
+    color: #ffffff !important;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    font-weight: bold;
+    font-family: monospace;
+    overflow: hidden;
+    
+  }
+
+
+
+
+
+
+
+/* ======\CD player - Fixed\============================================================================== */
+
+
+container {
+    
+    position: relative;
+    display: grid   ;
+    max-width: 95vw ;
+    min-height: 150px ;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+                        "a a b"
+                        "a a b"
+                        "a a b";
+    }
+
+
+
+.intro-container {
+    position: relative;
+    width: 100%;
+
+    height: fit-content;
+    display: flex;
+    justify-content: left; /* Centers horizontally */
+    align-items: center;  
+    left: 0%;
+}
+
+.intro {
+    width: 100%;
+    color: var(--terminal-color);
+    font-size: 13px;
+    font-family: var(--terminal-txt-font);
+    display:inline-block;    
+}
+
+
+  /* حاوية المشغل لجعل العناصر فوق بعضها */
+  .cd-player-container {
+    position: absolute;
+    /* left: 40%; */
+    width: 150px;
+    height: 150px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0px;
+    top: 110px;
+
+  }
+
+  /* تصميم القرص المدمج باستخدام الـ CSS */
+  .retro-cd {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: radial-gradient(circle, #141414 20%, #800020 21%, #800020 40%, #111 41%, #141414 70%);
+    border: 3px solid #e6b8c2;
+    box-shadow: 0 0 10px rgba(128, 0, 32, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    pointer-events: none; /* لتمرير النقرة إلى مشغل الصوت بالخلف */
+    animation: cd-spin 4s linear infinite;
+  }
+
+  /* الثقب الصغير في منتصف الـ CD */
+  .retro-cd::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #0d1117; /* لون خلفية ثيم جيتهاب المظلم */
+    border: 2px solid #e6b8c2;
+
+  }
+
+  /* حركة دوران القرص المستمرة */
+  @keyframes cd-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  /* السحر الحقيقي: إخفاء الشريط الأبيض وجعله يغطي المساحة ليتم نقره */
+  .hidden-audio-trigger {
+    position: absolute;
+    bottom : 28%;
+    left: 28%;
+    width: 100.1px;
+    height: 120px;
+    opacity: 0; /* شبه مخفي تماماً لكنه قابل للنقر */
+    z-index: 3;
+    cursor: help;
+  }
+
+
+/* ======================================================================================= */
+
+   pre {  /* ``` */
+    background-color: rgba(128, 0, 32, 0.05) !important; 
+    border-left: 4px solid #800020 !important;         
+    color: #c9d1d9 !important;                          
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 6px;
+    margin: 1em 0;
+}
+    pre code {
+    color: var(--text-color) !important;
+    font-family: var(--terminal-txt-font);
+}
+/* يستهدف فقط الفتحات الخلفية الفردية ويحولها إلى الكتلة الجميلة التي طلبتها */
+
+
+
+  blockquote /* > */ {
+    font-family: var(--terminal-txt-font);
+    background-color: rgb(128, 0, 32)!important; /* لون الخلفية (هنا أزرق شفاف خفيف) */
+    border-left: 4px solid #800020 !important;        /* لون الخط الجانبي العمودي */
+    color: #e6b8c2 !important;                        /* لون النص داخل الاقتباس */
+    padding: 0.px;
+    margin: 0;
+    border-radius: 4px;
+  }
+
+
+p > code /* ` ` */{
+    display: inline-block;
+    
+    background: none !important;
+    padding: 0 4px !important;
+    font-family: var(--terminal-txt-font);
+    font-weight: bold;
+    
+    color: transparent !important;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.25) !important;
+    cursor: pointer;
+    /* animation: codeGlow 4s ease-in-out infinite;  */
+
+}
+
+code /* - ` ` */{
+    display: inline-block;
+    
+    background: none ;
+    padding: 0 4px !important;
+    font-family: var(--terminal-txt-font) !important;
+    /* font-weight: bold; */
+    
+    color: var(--terminal-color) !important;
+    transition: all 0.5s ease;
+        white-space: normal;
+
+}
+
+p > code:hover {
+    color: #ffffff !important;
+    text-shadow: 0 0 6px #800020, 0 0 12px #800020 !important;
+    transform: translateY(-1px); 
+}
+
+    /* --- KEYFRAME DEFINITION --- */
+@keyframes codeGlow {
+    0% {
+        border-left-color: var(--primary-color);
+        box-shadow: 0 0 0px rgba(var(--bourgandy-rgb,0));
+    }
+    50% {
+        border-left-color: #ffffff; /* Shift accent wall to pure white */
+        box-shadow: 5px 0 15px rgba(var(--bourgandy-rgb,0.3)); /* Soft ambient aura */
+    }
+    100% {
+        border-left-color: var(--primary-color);
+        box-shadow: 0 0 0px rgba(var(--bourgandy-rgb,0));
+    }
+}
+
+    del{
+    text-decoration: none !important; /* إزالة خط الشطب الافتراضي تماماً */
+    color: rgba(255, 255, 255, 0.15) !important;
+    filter: blur(0.8px);
+    animation: fade-out-ghost 2s ease-out infinite alternate;
+    display: inline-block;
+    font-family: inherit !important;
+    font-weight: bold;
+}
+
+
+    
+
+
+    .block {
+    display: block;
+    background-color: rgba(128, 0, 32, 0.05) !important; 
+    border-left: 4px solid #800020 !important;         
+    color: #c9d1d9 !important;                          
+    padding: 10px 15px;
+    font-size: 0.9em;
+    border-radius: 6px;
+    margin: 1em 0;
+} 
+
+
+
+
+
+/* Veiled words (blurred for sensitive content) */
+.veiled-word {
+    filter: blur(6px);
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+    padding: 0 4px;
+    transition: filter 0.5s;
+}
+
+/* Fading ghost words */
+.ghost-word {
+    color: rgba(255, 255, 255, 0.15) !important;
+    filter: blur(0.8px);
+    animation: fade-out-ghost 2s ease-out infinite alternate;
+    display: inline-block;
+}
+
+@keyframes fade-out-ghost {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+        filter: blur(0.3px);
+    }
+    50% {
+        transform: translateY(+2px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(+5px) scale(0.9);
+        opacity: 0;
+        filter: blur(0px);
+    }
+}
+
+.shaking-thought , shake {
+    font-family: var(--terminal-txt-font);
+    display: inline-block;
+    animation: nervous-shake 0.5s infinite alternate;
+}
+
+.shaking-thought:hover , shake:hover {
+    animation-play-state: paused;
+}
+
+@keyframes nervous-shake {
+    0% { transform: translateX(0) translateY(0); }
+    25% { transform: translateX(-0.5px) translateY(0.5px); }
+    50% { transform: translateX(0.5px) translateY(-0.5px); }
+    75% { transform: translateX(-0.5px) translateY(-0.5px); }
+    100% { transform: translateX(0.5px) translateY(0.5px); }
+}
+
+.fading-strike {
+    display: inline-block;
+    text-decoration: line-through;
+    text-decoration-color: #f9f0f2;
+    color: rgba(201, 209, 217, 0.6) !important;
+    animation: strike-glow 4s infinite ease-in-out alternate;
+}
+
+@keyframes strike-glow {
+    0% { opacity: 0.8; filter: blur(0px); }
+    100% { opacity: 0.15; filter: blur(1.5px); }
+}
+
+
+.glowing-soul {
+    display: inline-block;
+    color: #ffffff !important;
+    font-weight: bold;
+    text-shadow: 0 0 2px #800020;
+    animation: soul-breathe 3s infinite ease-in-out alternate;
+}
+
+@keyframes soul-breathe {
+    0% { text-shadow: 0 0 2px #800020, 0 0 4px #800020; opacity: 0.8; }
+    100% { text-shadow: 0 0 8px #800020, 0 0 14px #e6b8c2; opacity: 1; }
+}
+
+.typing-word {
+    display: inline-block;
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #800020; /* المؤشر الوامض */
+    width: 0;
+    animation: 
+        type-animation 10s steps(20, end) infinite,
+        cursor-blink 0.6s step-end infinite alternate;
+}
+
+/* حركة ظهور الأحرف */
+@keyframes type-animation {
+    0%, 10%, 100% { width: 0; }
+    50%, 80% { width:fit-content ; } /* تكتمل الكلمة وتثبت قليلاً ليتم قراءتها */
+}
+
+/* حركة وميض المؤشر */
+@keyframes cursor-blink {
+    50% { border-color: transparent; }
+}
+
+
+
+.glitch-text {
+    display: inline-block;
+    color: #e6b8c2 !important;
+    position: relative;
+    animation: glitch-shake 0.4s infinite alternate;
+}
+
+@keyframes glitch-shake {
+    0% { transform: skew(0deg); text-shadow: 1px 0 #e71a4d, -1px 0 #000; }
+    50% { transform: skew(-2deg); text-shadow: -1px 0 #800020, 1px 0 #ffffff; opacity: 0.9; }
+    100% { transform: skew(3deg); text-shadow: 2px 0 #800020, -2px 0 #dd2a57; }
+}
+
+
+.secret-ink ,secret{
+    color: transparent !important;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.15); /* يظهر كأنه طيف باهت جداً */
+    transition: all 0.5s ease;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* عندما تمر الفأرة فوقه، ينقشع الضباب ويتوهج بالبورغاندي */
+.secret-ink:hover,secret:hover {
+    color: #ffffff !important;
+    text-shadow: 0 0 6px #800020, 0 0 12px #800020;
+}
+
+.shattered-container ,con{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.shattered-text {
+    display: inline-block;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    color: #c9d1d9 !important;
+}
+
+shatter{
+    display: inline-block;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    color: #c9d1d9 !important;
+    cursor: pointer;
+}
+/* عند تمرير الفأرة، ينفصل النص إلى شقين بفضل الوهم البصري */
+.shattered-container:hover .shattered-text,
+     shatter:hover{
+    transform: skewX(-10deg) scaleY(0.9);
+    text-shadow: 
+        0 -3px 0 rgba(128, 0, 32, 0.6),  /* الشق العلوي البورغاندي */
+        0 3px 0 rgba(230, 184, 194, 0.5); /* الشق السفلي الناعم */
+}
+
+memory {
+    color:#888;
+    opacity: 0.7;
+    filter: blur(7px);
+    letter-spacing: 2px;
+    transition: all 3s ease-in-out ; /* Smooth transit both ways */
+
+}
+
+
+memory:hover {
+    color:var(--terminal-color);
+
+    animation: memory-flicker 4s ease forwards;
+}
+
+@keyframes memory-flicker {
+
+    0% {
+        opacity: 0.5;
+        filter: blur(6px);
+
+    }
+
+    20% {
+        opacity: 0.8;
+        filter: blur(2px);
+        letter-spacing: 1.2px;
+    }
+
+    35% {
+        opacity: 0.6;
+        filter: blur(4px);
+        letter-spacing: 1.5px;
+
+    }
+
+    50% {
+        opacity: 0.6;
+        filter: blur(4px);
+        letter-spacing: normal;
+    }
+
+
+    60% {
+        opacity: 1;
+        filter: blur(1px);
+
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        letter-spacing: normal;
+
+    }
+}   
+
+.melting-ash {
+    display: inline-block;
+    color: #ffffff !important;
+    animation: melt-drop 3.5s infinite ease-in-out alternate;
+}
+
+@keyframes melt-drop {
+    0% {
+        filter: blur(0px);
+        transform: scaleY(1) translateY(0);
+        opacity: 1;
+        text-shadow: none;
+    }
+    50% {
+        opacity: 0.8;
+        text-shadow: 0 2px 3px rgba(128, 0, 32, 0.5);
+    }
+    100% {
+        filter: blur(2px);
+        /* تمديد النص للأسفل وتحريكه كأنه يقطر أو يتساقط كرماد */
+        transform: scaleY(1.3) translateY(4px);
+        opacity: 0.1;
+        color: #800020 !important;
+    }
+}
+
+
+.fading-mirage {
+    display: inline-block;
+    color: #ffffff !important;
+    letter-spacing: 0px;
+    animation: mirage-expand 5s ease-in-out infinite alternate;
+}
+
+@keyframes mirage-expand {
+    0% {
+        letter-spacing: 0px;
+        filter: blur(0px);
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+        text-shadow: 0 0 4px rgba(230, 184, 194, 0.4);
+    }
+    100% {
+        /* تباعد الحروف مع الضباب يعطي إيحاء التبخر الأفقي */
+        letter-spacing: 4px;
+        filter: blur(3px);
+        opacity: 0;
+    }
+}
+
+
+
+/* تباعد مريح بين سجلات الأيام */
+.clean-modular-log {
+  margin-bottom: 8px;
+}
+
+/* حالة الإخفاء الافتراضية: مخفي تماماً وبدون أي إطارات أو خلفيات */
+.clean-modular-log .log-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease-in;
+}
+
+/* حالة الإظهار عند النقر: يتمدد النص بسلاسة ويظهر على طبيعته */
+.clean-modular-log .toggle-input:checked ~ .log-content {
+  max-height: 200000px; /* مساحة ضخمة لتستوعب الجداول والنصوص الطويلة جداً */
+  opacity: 1;
+  margin-top: 8px;
+}
+
+/* تنسيق عنوان اليوم التفاعلي */
+.clean-modular-log .log-trigger {
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+/* التوهج الأزرق الساحر عند الاقتراب بالفأرة */
+.clean-modular-log .log-trigger:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(237, 31, 31, 0.5);
+}
+
+
+/* ===================== <!-- ALTERNATE BRANCH (Dull, Hidden by Default) -->=================== */
+/* ==================== BASE STYLES ==================== */
+[log-branch] {
+  margin-bottom: 8px;
+  transition: all 1.5s ease;
+}
+
+/* ==================== MAIN BRANCH ==================== */
+[log-branch="main"] .log-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease-in;
+}
+
+[log-branch="main"] .toggle-input:checked ~ .log-content {
+  max-height: 200000px;
+  opacity: 1;
+  margin-top: 8px;
+}
+
+[log-branch="main"] .log-trigger {
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+[log-branch="main"] .log-trigger:hover {
+  text-shadow: 0 0 10px rgba(237, 31, 31, 0.5);
+}
+
+/* ==================== ALTERNATE BRANCH ==================== */
+/* HIDDEN BY DEFAULT */
+[log-branch="alter"] {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%) brightness(0.5);
+  transition: all 1.5s ease;
+}
+
+/* SHOW WHEN TOGGLE IS CHECKED */
+#what-if-toggle:checked ~ [log-branch="alter"] {
+  max-height: 200000px;
+  opacity: 1;
+  filter: grayscale(0%) brightness(1);
+  margin-top: 15px;
+  transition-delay: 7s;
+
+}
+
+[log-branch="alter"] .log-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease-in;
+}
+
+[log-branch="alter"] .toggle-input:checked ~ .log-content {
+  max-height: 200000px;
+  opacity: 1;
+  margin-top: 8px;
+}
+
+[log-branch="alter"] .log-trigger {
+  display: inline-block;
+  cursor: pointer;
+  color: #888888;
+  font-weight: 500;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+[log-branch="alter"] .log-trigger:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(237, 31, 31, 0.5);
+
+}
+
+
+
+/* ==================== DAY EXCEPTION ==================== */
+
+.exception-day .alter-text {
+    display: none;
+}
+
+.exception-day .real-text {
+  opacity: 1;
+}
+
+#what-if-toggle:checked ~ .exception-day .real-text {
+  display: none;
+}
+
+/* When "Go Beyond" is clicked: Hide placeholder, show real text */
+#what-if-toggle:checked ~ .exception-day .alter-text {
+  display: block;
+}
+
+/* Day EXCEPTION stays colorful even when main branch fades */
+
+#what-if-toggle:checked ~ .exception-day {
+  filter: grayscale(0%) brightness(1) !important;
+  opacity: 1 !important;
+}
+
+
+/* ==================== GLOWING TIMELINE ==================== */
+/* This makes the alternate log glow when the branch is active */
+#what-if-toggle:checked ~ [log-branch="alter"] .glowing-timeline {
+  color: #ffffff;
+  animation: pulse-glow 2s infinite alternate;
+  
+}
+
+
+/* ==================== WHAT IF TOGGLE ==================== */
+.what-if-trigger {
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: bold;
+  display: inline-block;
+  margin: 20px 0;
+  width: 150px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+/* ==================== GRAYSCALE EFFECT ==================== */
+/* When toggle is checked, fade the main branch */
+#what-if-toggle:checked ~ [log-branch="main"] {
+  filter: grayscale(80%) brightness(0.6);
+  opacity: 0.5;
+}
+
+
+
+/* ===================== Inner-Thought ======================= */
+
+[data-effect="pop-up"],pop {
+    position: relative;     /* Creates an anchor for the popup */
+    cursor: help;
+    min-width: fit-content;
+}
+
+
+/* 2. The thought — hidden by default */
+
+[block-effect="thought"],bug-thought  {
+    display:block;
+    font-family: Cascadia Mono;
+    font-size: 13px;
+    background-color: rgba(128, 0, 32, 0.25);
+    color: #f8f8f2d7;
+    position: absolute;
+    bottom: 100%;           /* Appear above the text */
+    left: 20%;
+
+    padding: 8px 12px;
+    border-radius: 6px;
+    max-width:600px;
+    max-height:300px;
+
+    overflow: auto;
+    white-space: nowrap;
+    /* Start hidden */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateX(-50%) translateY(5px);
+    z-index: 10; 
+}
+
+/* ======================= Bug Fixed =========================== */
+
+[block-effect="thought"],thought  {
+    display:flex;
+    justify-content: left; /* Centers horizontally */
+    align-items: center;    /* Centers vertically */
+    height: 100vh;   ;
+    font-family: Cascadia Mono;
+    font-size: 13px;
+    background-color: rgba(128, 0, 32, 0.25);
+    color: #f8f8f2d7;
+    position: absolute;
+    bottom: 100%;           /* Appear above the text */
+    left: 200px;
+    /* right: 0; */
+
+    padding: 8px 12px;
+    border-radius: 6px;
+    min-width:fit-content;
+    max-height:fit-content;
+    min-height: 20px;
+
+    overflow: auto;
+    white-space: nowrap;
+    /* Start hidden */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateX(-50%) translateY(5px);
+    z-index: 10; 
+}
+
+
+/* 3. Show the popup on hover */
+
+[data-effect="pop-up"]:hover [block-effect="thought"] ,
+    pop:hover thought ,pop:active bug-thought{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+
+}
+
+
+
+
+/* ===================== Git-Terminal ================== */
+
+[block-effect="terminal"] ,terminal{
+display:block;
+font-family: Cascadia Mono;
+font-size: 13px;
+background-color: rgba(40 42 53);
+border-top: 4px solid #282A35 ;
+color: #f8f8f2d7;
+padding: 15px;
+border-radius: 6px;
+max-width:600px;
+max-height:300px;
+overflow: auto;
+white-space: pre-wrap;
+
+}
+
+[block-effect="terminal"]::selection ,
+terminal::selection{
+    color: #f8f8f2d7;
+    background-color: #44475A;
+    padding: 6px;
+}
+
+
+[block-effect="terminal"]::before,
+terminal::before {
+    content: "● ● ●   Somewhere-Calm.log";
+    display: block;
+    width: 0.;
+    margin-bottom: 12px;
+    color: rgba(255,255,255,0.45);
+    font-size: 11px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    padding-bottom: 8px;
+}
+
+
+cursor::before {
+    content: "▋";
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+prompt::before {
+    content: "🌸 Zoli's Room:~$";
+
+}
+
+log::before {
+    content: var(--git-log);
+}
+
+
+/* ============================================================ */
+
+/* ==================== Staring Contest ==================== */
+
+
+.staring-contest-box {
+    background-color: #141414;
+    border: 1px dashed #800020;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    cursor: cell;
+    overflow: hidden; /* مهم جداً لإخفاء النوافذ خارج الحدود */
+    margin: 25px 0;
+    transition: background-color 0.4s ease;
+}
+
+/* النوافذ السينمائية - تبدأ من 0% */
+.top-window, .bot-window {
+    position: absolute;
+    width: 100%;
+    height: 0%; /* تبدأ مغلقة */
+    background-color: #000000;
+    transition: height 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+    pointer-events: none; /* عشان ما تغطي على المحتوى */
+}
+
+.top-window {
+    top: 0;
+    left: 0;
+}
+
+.bot-window {
+    bottom: 0;
+    left: 0;
+}
+
+.staring-contest-box:hover .top-window {
+    height: 30%;
+}
+
+.staring-contest-box:hover .bot-window {
+    height: 30%;
+}
+
+
+/* ضبط الرسائل */
+.contest-screen {
+    position: relative;
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2; /* فوق النوافذ */
+}
+
+.contest-state {
+    position: absolute;
+    width: 100%;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-family: 'Fira Code', monospace;
+}
+
+.staring-msg, .lose-msg {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+}
+
+.start-msg {
+    opacity: 1;
+    color: #ffffff;
+}
+
+/* تأثير التحديق */
+.staring-contest-box:hover {
+    background-color: #0c0c0c;
+    border-style: solid;
+    border-color: #a00030;
+    box-shadow: 0 0 30px rgba(128, 0, 32, 0.6);
+}
+
+.staring-contest-box:hover .start-msg {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.staring-contest-box:hover .staring-msg {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    color: #ffffff;
+}
+
+/* العداد */
+.timer-simulation {
+    font-size: 0.8rem;
+    animation: blinkGlow 1.5s infinite alternate, msg-erasing 0.5s ease 6.5s forwards;
+}
+
+/* عند النقر */
+.staring-contest-box:active .staring-msg {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.staring-contest-box:active .lose-msg {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    color: #c92727;
+}
+
+@keyframes blinkGlow {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+@keyframes msg-erasing {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* رسالة الفوز */
+.staring-contest-box::after {
+    content: "you are very stubborn, ok I surrender. You win! ";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    font-family: 'Cascadia Mono', monospace;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    z-index: 3;
+}
+
+.staring-contest-box:hover::after {
+    animation: winMessage 0.5s ease 7s forwards;
+}
+
+@keyframes winMessage {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* =================================================================== */
+
+/* ================ Typewriter ============= */
+/* Base styling for the page */
+
+/* The Typewriter Container */
+.typewriter ,ty, tyy {
+  /* 1. CRITICAL: Use a monospace font! */
+  display:block;
+  /* position: absolute; */
+  font-family: 'Cascadia Mono','Courier New', Courier, monospace;
+  font-size: 13px;
+  color: #e6e8e8;
+  max-width:fit-content;
+  max-height:fit-content;
+  margin: 2px 0 2px ;
+  /* 2. Hide the text until the width expands */
+  overflow: hidden; 
+  white-space: nowrap; /* Prevents text from wrapping to the next line */
+  
+  /* 3. Create the blinking cursor using a right border */
+  border-right: 2.5px solid var(--terminal-color); 
+  
+  letter-spacing: .10em; /* Optional: adds a little breathing room */
+
+  /* 5. Apply the animations */
+  animation: 
+    typing 3.5s steps(30, end) forwards, /* Added 'forwards' here */
+    blink-caret .75s step-end infinite; /* Blinking cursor animation */
+}
+
+.typewriter:hover, ty:hover {
+  animation: blink-caret .75s step-end infinite; /* Only cursor keeps moving */
+  text-shadow: 0 0 6px var(--terminal-color);
+  cursor: pointer;
+}
+
+tyy {
+  animation-play-state: paused; /* Starts paused */
+}
+tyy:hover {
+  animation-play-state: running; /* Plays on hover */
+}
+
+/* The Typing Effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The Blinking Cursor Effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--terminal-color); }
+}
+
+pop thought ty {
+  animation-delay: 1s;
+}
+
+/* ======================================================================== */
+
+/* ===================== Memory Corruption (Pure CSS) ===================== */
+corrupt, [data-effect="corrupt"] {
+    position: relative;
+    display: inline-block;
+    color: #c9d1d9;
+    font-family: 'Cascadia Mono', monospace;
+    cursor: help; /* Shows a '?' cursor */
+    filter: blur(0.5px); /* Slight degradation by default */
+    transition: color 0.3s, text-shadow 0.3s, filter 0.3s;
+}
+
+/* The glitch layers (invisible copies of the text) */
+corrupt::before,
+corrupt::after,
+[data-effect="corrupt"]::before,
+[data-effect="corrupt"]::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color); /* Matches background to hide parts */
+
+    overflow: hidden;
+    pointer-events: none;
+}
+
+/* Layer 1: Shifts left, burgundy shadow */
+corrupt::before,
+[data-effect="corrupt"]::before {
+    left: 2px;
+    text-shadow: -2px 0 #800020;
+    animation: corrupt-slice-1 2s infinite linear alternate-reverse;
+}
+
+/* Layer 2: Shifts right, soft pink shadow */
+corrupt::after,
+[data-effect="corrupt"]::after {
+    left: -2px;
+    text-shadow: 2px 0 #e6b8c2;
+    animation: corrupt-slice-2 2.5s infinite linear alternate-reverse;
+}
+
+/* The "Tearing" Animations */
+@keyframes corrupt-slice-1 {
+    0%   { clip-path: inset(20% 0 60% 0); transform: translateX(-2px); }
+    20%  { clip-path: inset(60% 0 10% 0); transform: translateX(2px); }
+    40%  { clip-path: inset(40% 0 40% 0); transform: translateX(-1px); }
+    60%  { clip-path: inset(80% 0 5% 0);  transform: translateX(1px); }
+    80%  { clip-path: inset(10% 0 70% 0); transform: translateX(-2px); }
+    100% { clip-path: inset(50% 0 30% 0); transform: translateX(2px); }
+}
+
+@keyframes corrupt-slice-2 {
+    0%   { clip-path: inset(10% 0 70% 0); transform: translateX(2px); }
+    20%  { clip-path: inset(30% 0 50% 0); transform: translateX(-2px); }
+    40%  { clip-path: inset(70% 0 10% 0); transform: translateX(1px); }
+    60%  { clip-path: inset(20% 0 60% 0); transform: translateX(-1px); }
+    80%  { clip-path: inset(50% 0 30% 0); transform: translateX(2px); }
+    100% { clip-path: inset(80% 0 5% 0);  transform: translateX(-2px); }
+}
+
+/* HOVER STATE: The room "remembers" and stabilizes */
+corrupt:hover, 
+[data-effect="corrupt"]:hover {
+    color: #ffffff !important;
+    text-shadow: 0 0 8px #800020, 0 0 15px rgba(128, 0, 32, 0.5);
+    filter: blur(0px);
+}
+
+/* Hide the glitch layers on hover */
+corrupt:hover::before,
+corrupt:hover::after,
+[data-effect="corrupt"]:hover::before,
+[data-effect="corrupt"]:hover::after {
+    display: none; 
+}
+
+cen{
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;
+  text-align: center;
+
+}
+
+/*  ================= Tables ============================================== */
+
+
+th, td {
+    border-bottom: 1px solid #444444;  /* Clean, subtle inner grid lines */
+    padding: 9px 15px;         /* 12px top/bottom, 15px left/right inside cells */
+    text-align: left;           /* Neat alignment for data readings */
+    white-space: normal;
+
+    
+}
+
+th {
+    background-color: #1e1e1e;  /* Dark header background to make columns pop */
+    color: var(--terminal-color);             /* Matches your signature accent color */
+
+}
+
+/* 1. Zebra Striping: Target every even data row inside the table body */
+tr:nth-child(even) {
+    background-color: #1a1a1a; /* Slightly darker gray for alternate rows */
+}
+
+/* 2. Setup the transition engine globally on all table rows */
+tr {
+    background-color: transparent;
+    transition: background-color 0.35s ease-in-out; /* Smooth 0.25-second color fade */
+    white-space: normal;
+
+}
+
+/* 3. The Hover State: What happens when your mouse rolls over the row */
+tr:hover {
+    background-color: rgba(var(--bourgandy-rgb),0.5); /* Smooth neon-teal tinted highlight */
+    cursor: pointer;           /* Changes mouse cursor to a clicking hand */
+}
+
+
+
+
+/* ===================== High-Light =================== */
+
+light {
+    font-family:Cascadia Mono;
+    position: relative;
+
+}
+
+light:before{
+    content:"";
+    position: absolute;
+    left: -5%;
+    top: 1%;
+    width: 110%;
+    height: 110%;
+
+    background-color: #000000;
+    z-index: -1;
+    transform: rotate(-0.9deg);
+}
+
+
+/* ========================= Progress Bar ======================= */
+
+
+bar sty:hover{
+    animation: blink-caret .75s step-end;
+    cursor: pointer;
+}
+
+bar{
+    position:relative;
+    display:inline-block;
+    width:300px;
+    height:17px;
+    /* top: %; */
+}
+
+bar::before{
+    content:"";
+    position:absolute;
+    inset:0px;
+    background-color: black;
+}
+
+bar sty{
+    position:absolute;
+    line-height:1.23;
+    border-right: 8.5px solid rgb(255, 255, 255); 
+    left:0px;
+    top:0px;
+    overflow:hidden;
+    white-space:nowrap;
+    width:0;
+    animation:typing 3s steps(15,end) forwards;
+}
+
+prog {
+    display:inline-block;
+
+
+}
+
+ prog::before {
+    content:"█████████████████████████████████████";
+        font-size:20px;
+
+    position:absolute;
+    inset:0px;
+    top:-2px;
+    color:var(--primary-color);
+    text-shadow:3px 3px 1px var(--primary-color);
+}
+
+
+/* ======================= ========================== */
+
+
