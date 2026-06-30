@@ -4,6 +4,12 @@ Mobile Branch Experience
 
 @media (max-width: 1024px) {
 
+  body {
+    font-size: 20px;
+    line-height: 1.7;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
   /* Remove hover dependence */
   [log-branch="main"] .log-trigger:hover,
   [log-branch="alter"] .log-trigger:hover {
