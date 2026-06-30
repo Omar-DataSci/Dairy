@@ -5,7 +5,7 @@ Mobile Branch Experience
 @media (max-width: 1024px) {
 
   body {
-    font-size: 20px;
+    font-size: 1.6rem ;
     line-height: 1.7;
     margin: 0 auto;
     padding: 1.5rem;
@@ -252,5 +252,13 @@ p > code:hover, .secret-ink:hover, secret:hover {
       text-shadow: 0 0 6px #800020, 0 0 12px #800020 !important;
       transform: translateY(-1px) !important;
   }
+
+  
+th, td, tr,pre , .intro-container .intro {
+      font-size: 1.25rem ;
+
+}
+
+
 
 }

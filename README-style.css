@@ -10,6 +10,9 @@
   --bg-color: #121314;
   --text-light: #f8f8f2;
   --text-color: 255,255,255;
+  --font-13px: 0.8125rem;
+  --font-11px: 0.6875rem;
+  
   
   --font-serif-book: 'EB Garamond', Garamond, Baskerville, Georgia, serif;
 
@@ -435,7 +438,7 @@ container {
 .intro {
     width: 100%;
     color: var(--terminal-color);
-    font-size: 13px;
+    font-size:var(--font-13px);
     font-family: var(--terminal-txt-font);
     display:inline-block;    
 }
@@ -511,7 +514,7 @@ container {
     border-left: 4px solid #800020 !important;         
     color: #c9d1d9 !important;                          
     padding: 10px 15px;
-    font-size: 1em;
+    font-size: var(--font-11px);
     border-radius: 6px;
     margin: 1em 0;
     white-space: normal;
@@ -1076,7 +1079,7 @@ memory:hover {
 [block-effect="thought"],bug-thought  {
     display:block;
     font-family: Cascadia Mono;
-    font-size: 13px;
+    font-size: var(--font-13px);
     background-color: rgba(128, 0, 32, 0.25);
     color: #f8f8f2d7;
     position: absolute;
@@ -1106,7 +1109,7 @@ memory:hover {
     align-items: center;    /* Centers vertically */
     height: 100vh;   ;
     font-family: Cascadia Mono;
-    font-size: 13px;
+    font-size: var(--font-13px);
     background-color: rgba(128, 0, 32, 0.25);
     color: #f8f8f2d7;
     position: absolute;
@@ -1149,7 +1152,7 @@ memory:hover {
 [block-effect="terminal"] ,terminal{
 display:block;
 font-family: Cascadia Mono;
-font-size: 13px;
+font-size: var(--font-13px);
 background-color: rgba(40 42 53);
 border-top: 4px solid #282A35 ;
 color: #f8f8f2d7;
@@ -1177,7 +1180,7 @@ terminal::before {
     width: 0.;
     margin-bottom: 12px;
     color: rgba(255,255,255,0.45);
-    font-size: 11px;
+    font-size: var(--font-11px);
     border-bottom: 1px solid rgba(255,255,255,0.08);
     padding-bottom: 8px;
 }
@@ -1372,7 +1375,7 @@ log::before {
   display:block;
   /* position: absolute; */
   font-family: 'Cascadia Mono','Courier New', Courier, monospace;
-  font-size: 13px;
+  font-size: var(--font-13px);
   color: #e6e8e8;
   max-width:fit-content;
   max-height:fit-content;
