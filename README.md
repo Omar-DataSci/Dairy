@@ -123,10 +123,11 @@ When I rush the dialogue..The words glitch\
 So..i didn't want to fix it i made it a feature\
 I built the entire Project around it.
 
-![bug-feature](/Somewhere/assets/png/bug-feature.png)
+![bug-feature](/Dairy/assets/png/bug-feature.png)
 
 <day>Omar-D-37</day>
 Eh..No..it's not like that.. the bug happen when you click fast and rush the dialog.
+
 PS: I fixed that bug.
 </span>
 
@@ -1475,7 +1476,7 @@ I was listneing to some piano pieces,and thought to my self i want her to listen
 <summary>🌸 This what it look like for now 
 </summary>
 
-![cd](/Somewhere/assets/png/cd.png)
+![cd](/Dairy/assets/png/cd.png)
 
 
 So i thought self since mark-down built like webs\
@@ -1517,10 +1518,14 @@ Time: 9:11 PM
 
 Hey zoli ~
 My energy has been pretty low today, so I’ve been a bit..quiet?
+
 Am sorry but there is nothing to add.
-tbh ..i realy like this place.. i know if stayed more
-i can get my motivation back..but for some reason i don't want to stay.
-nothing serious just like that....i think am gonna play some games.
+
+tbh ..i realy like this place.. and i know if stayed more,i can get my motivation back..
+
+But for some reason i don't want to stay.
+
+Nothing serious just like that....i think am gonna play some games.
 
 </div></div>
 
@@ -1982,9 +1987,10 @@ Time:  2:47 AM
 
 Hi zoli..
 hmm .. i just noticed through out the entire README that i never called you by your first name..
-
+<pop>
 <b>Zuleikha..</b> <b>The one who shines</b>
-
+<thought>I made this effect inspired by your name</thought>
+</pop>
 Anyway i created a better hidding system..\
 Make the File like a realgame..hehehe..
 
@@ -2287,6 +2293,13 @@ I hope you find happines in life forever like you made me this past 3 days
 Truly thank you zolii !!!
 (Hug her tightly !!)
 
+<details>
+<summary><day>Omar-D-40</day></summary>
+
+![Hug her](assets/png/wh-hug.png)
+
+</details>
+
 <span class= "phoenix-shatter">
 Time: 5:30 AM
 
@@ -2313,17 +2326,27 @@ It's this girl ..look.. hmm should i block her?
 
 ```
 Amber harsha — Yesterday at 10:05
+
 Hello
+
 How are you 😊
+
 Omar [souʪ],  — Yesterday at 18:53
+
 hi there
+
 fine and u?
- [souʪ], 
+
 Amber harsha — 11:12
+
 Thank you, I'm good 😊
+
 I feel this app is kinda boring, so I added up.
+
 Hope you're cool with that?
+
 Omar [souʪ],  — 18:30
+
 yep no problem
 ```
 
@@ -2347,11 +2370,11 @@ Man just thinking about this make me feel less..
 
 Whats the right word..
 
-Less regret? 
+Less lonely? 
 
 So don't worry about me..
 true i miss you but focus on your self first.
-You are not missing anything here:)
+You are not missing anything here ^^
 
 >"Rest assured, you never left. You didn't miss anything. You were with me the whole time."
 
@@ -2434,13 +2457,6 @@ A staring contest game using pure CSS
 <terminal>
 🌸 Zoli's Room:~/Desktop/Project june 30/Somewhere (main)$ git log --oneline 
 
-
-b487bd7 (HEAD -> main, origin/main, origin/HEAD) Day 36 - Almost done - btw I hosted the old room u can see it on your
-5a86b09 Day 35 : Origins - What existed before the room.
-0d34c6d Day 34 - 7 Days to go (lol yeah..am kinda late to commit)
-5a2dbb5 (alternate-timeline) Day 34 - Wrapped alternate timeline days - Am back..zoli ^^
-8683fbc Save point (before alternate branch experiment) - If you wonder what am doing am literally gonna create anothethe alternative timeline system then if it work we merge..  well wish me luck.
-c897b40 Day 30 (late) - Come up with the idea of timeline branches - Created the alternative timeline system - Missed 
 140272b The CSS magic is hidden now
 a95e1ac Fixed some timeline conflict
 7f5630d Zoli's back!
@@ -3378,7 +3394,7 @@ Done..I merged the two timelines..
 
 I created something..scary..look
 
-![dull world](/Somewhere/assets/png/image.png)
+![dull world](/Dairy/assets/png/image.png)
 
 <t>01:00 PM</t>
 
@@ -3732,7 +3748,7 @@ I made another effect !! (Stole it from AI)
 
 15 Hour strait.
 
-![waka](/Somewhere/assets/png/waka-time.png)
+![waka](/Dairy//assets/png/waka-time.png)
 
 <day>Omar-D-03</day><mirage>This is geting ridiculous</mirage><pop><shake>GUYS GUYS GUYS!!
 </shake><bug-thought>Zoli Just Texted me back !!!
@@ -4226,7 +4242,7 @@ bruh..
 
 lol.
 
-![alt text](image.png)
+![alt text](/Dairy/assets/png/bk.png)
 
 ah.
 
@@ -4519,7 +4535,7 @@ But look and tell me zoli
 
 How do you not get addicted to this view
 
-![alt text](image-1.png)
+![alt text](/Dairy/assets/png/image-1.png)
 
 It's so calming..
 
@@ -4605,7 +4621,7 @@ Who know ~ maybe you will suggest more ideas..
 
 Anyway .. i'll rest now... bye.
 
-![alt text](image-2.png)
+![alt text](/Dairy/assets/png/image-2.png)
 
 in cmd i liked this  making it all black like it'a high-light
 
@@ -4613,13 +4629,13 @@ i think i'll do that.. too
 
 maybe
 
-![alt text](image-3.png)
+![alt text](/Dairy/assets/png/image-3.png)
 
 appearntly it's just a bug ? or no?
 
 i don't know but i like it.
 
-![alt text](image-4.png)
+![alt text](/Dairy/assets/png/image-4.png)
 
 oh..intresting it look like a progress bar..
 
@@ -4839,7 +4855,7 @@ Maybe..i attach easly..
 
 But i didn't lie about anything.
 
-![alt text](image-8.png)
+![alt text](/Dairy/assets/png/image-8.png)
 
 Actualy..i think..i did..some work today
 
@@ -4854,27 +4870,33 @@ For some reason white haired female character i see in manhua..
 
 I picture it as you...
 
-![alt text](image-9.png)
 
 Us ^^ 
 
-![alt text](image-10.png)
+![alt text](/Dairy/assets/png/wh.png)
+
 NO~ Don't cry 
 
+![alt text](/Dairy/assets/png/wh-cry.png)
+
 I found the exact picture!! i imagined that time
+
+You know what am gonna add it top.
 
 I'll add it later..
 
 And if you look closer the girl is glitching
 
-Because she is and not at the same time.
+Because she is real and not at the same time.
+
+He lives in two realities..or that's what he think.
 
 EXACTLY US!!
-![alt text](image-11.png)
 
-![alt text](image-12.png)
+![alt text](/Dairy/assets/png/hold-hand.png)
 
-![alt text](image-13.png)
+
+
 
 <terminal>
 61faeed Day 40 - Maybe this fix the room
@@ -5502,9 +5524,9 @@ Shouldn't you at least tell me why did you leave..
 </h3>
 </cen>  
 
-![alt text](image-5.png)
-![alt text](image-7.png)
-![alt text](image-6.png)
+![alt text](/Dairy/assets/png/image-5.png)
+![alt text](/Dairy/assets/png/image-7.png)
+
 <h3>
 <guilt type="day" >Abyss</guilt></h3>
 
