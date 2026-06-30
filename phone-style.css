@@ -1,11 +1,15 @@
 /* ==========================================
 Mobile Branch Experience
 ========================================== */
+:root {
+    --font-13px: 0.8125rem;
+
+}
 
 @media (max-width: 1024px) {
 
   body {
-    font-size: 1.6rem ;
+    font-size: 1.9rem ;
     line-height: 1.7;
     margin: 0 auto;
     padding: 1.5rem;
@@ -254,11 +258,14 @@ p > code:hover, .secret-ink:hover, secret:hover {
   }
 
   
-th, td, tr,pre , .intro-container .intro {
+th, td, tr,pre {
       font-size: 1.25rem ;
 
 }
 
+.intro-container .intro {
+  font-size: 1.8rem;
+}
 
 
 }
