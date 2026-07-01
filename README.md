@@ -3,9 +3,9 @@
 
 <container>
 <div class="cd-player-container" title="Click to Play / Pause Music">
-  <!-- القرص البصري الذي يراه المستخدم ويدور -->
+
   <div class="retro-cd"></div>
-  <!-- مشغل الصوت الفعلي المخفي بالخلف -->
+
   <audio class="hidden-audio-trigger" controls loop>
     <source src="assets/audio/Yann Tiersen - Comptine d'un autre été.mp3" type="audio/mpeg">
   </audio>
@@ -123,7 +123,7 @@ When I rush the dialogue..The words glitch\
 So..i didn't want to fix it i made it a feature\
 I built the entire Project around it.
 
-![bug-feature](/Dairy/assets/png/bug-feature.png)
+![bug-feature](assets/png/bug-feature.png)
 
 <day>Omar-D-37</day>
 Eh..No..it's not like that.. the bug happen when you click fast and rush the dialog.
@@ -275,7 +275,7 @@ before time turns it into a vague memory.
 - [X] 3. Add more sounds and music effects
 - [X] 4. Add more visual effects
 - [X] 5. Add more easter eggs and hidden surprises
-- [ ] 6. Add explination for each part for how to..see this mark down like i see
+- [x] 6. Add explination for each part for how to..see this mark down like i see
 - [X] 7. Add a table of content for easy navigation
 - [X] 8. Add a table for progress tracking and updates
 - [X] 9. Add a section for future plans and ideas..or maybe not..
@@ -1476,7 +1476,7 @@ I was listneing to some piano pieces,and thought to my self i want her to listen
 <summary>🌸 This what it look like for now 
 </summary>
 
-![cd](/Dairy/assets/png/cd.png)
+![cd](assets/png/cd.png)
 
 
 So i thought self since mark-down built like webs\
@@ -3394,7 +3394,7 @@ Done..I merged the two timelines..
 
 I created something..scary..look
 
-![dull world](/Dairy/assets/png/image.png)
+![dull world](assets/png/image.png)
 
 <t>01:00 PM</t>
 
@@ -3748,7 +3748,7 @@ I made another effect !! (Stole it from AI)
 
 15 Hour strait.
 
-![waka](/Dairy//assets/png/waka-time.png)
+![waka](assets/png/waka-time.png)
 
 <day>Omar-D-03</day><mirage>This is geting ridiculous</mirage><pop><shake>GUYS GUYS GUYS!!
 </shake><bug-thought>Zoli Just Texted me back !!!
@@ -4242,7 +4242,7 @@ bruh..
 
 lol.
 
-![alt text](/Dairy/assets/png/bk.png)
+![alt text](assets/png/bk.png)
 
 ah.
 
@@ -4535,7 +4535,7 @@ But look and tell me zoli
 
 How do you not get addicted to this view
 
-![alt text](/Dairy/assets/png/image-1.png)
+![alt text](assets/png/image-1.png)
 
 It's so calming..
 
@@ -4621,7 +4621,7 @@ Who know ~ maybe you will suggest more ideas..
 
 Anyway .. i'll rest now... bye.
 
-![alt text](/Dairy/assets/png/image-2.png)
+![alt text](assets/png/image-2.png)
 
 in cmd i liked this  making it all black like it'a high-light
 
@@ -4629,13 +4629,13 @@ i think i'll do that.. too
 
 maybe
 
-![alt text](/Dairy/assets/png/image-3.png)
+![alt text](assets/png/image-3.png)
 
 appearntly it's just a bug ? or no?
 
 i don't know but i like it.
 
-![alt text](/Dairy/assets/png/image-4.png)
+![alt text](assets/png/image-4.png)
 
 oh..intresting it look like a progress bar..
 
@@ -4855,7 +4855,7 @@ Maybe..i attach easly..
 
 But i didn't lie about anything.
 
-![alt text](/Dairy/assets/png/image-8.png)
+![alt text](assets/png/image-8.png)
 
 Actualy..i think..i did..some work today
 
@@ -4873,11 +4873,11 @@ I picture it as you...
 
 Us ^^ 
 
-![alt text](/Dairy/assets/png/wh.png)
+![alt text](assets/png/wh.png)
 
 NO~ Don't cry 
 
-![alt text](/Dairy/assets/png/wh-cry.png)
+![alt text](assets/png/wh-cry.png)
 
 I found the exact picture!! i imagined that time
 
@@ -4893,14 +4893,18 @@ He lives in two realities..or that's what he think.
 
 EXACTLY US!!
 
-![alt text](/Dairy/assets/png/hold-hand.png)
+![alt text](assets/png/hold-hand.png)
 
+---
 
+The first working version is Done.
 
+Am tired..
 
 <terminal>
 61faeed Day 40 - Maybe this fix the room
 846f6ca Day 40 - The room is ready~
+
 <corrupt data-text="🌸 Omar's Room:~$">🌸 Zoli's Room:~$</corrupt><cursor></cursor></terminal>
 
   </div>
@@ -4927,16 +4931,25 @@ Happy birth day..
 I don't know what to say..
 am realy bad at..saying good bye..
 
-was i a good friend?..we will never know..
+Was i a good friend?..
+
+I guess...
+
+We'll never know..
 
 i hope your dreams come true..
 and live a good life..
 
-Now i can close this chaptre..
-your chaptre. 
+Now I can finally close this chapter.
+
+Your chaptre. 
 
 ```
-Bed story night end..(give her a kiss on the forehead) sweet dreams
+Bed story night end..
+
+(give her a kiss on the forehead) 
+
+sweet dreams.
 ```
 
 i still have a lot to say..
@@ -4945,7 +4958,7 @@ but i think better leave buried.
 
 well..this is it.
 
-<corrupt data-text="Good Bye.." >Good Bye..My Zoli..</guilt>
+<corrupt data-text="Good Bye..My Love.." >Good Bye..My Zoli..</guilt>
 
 see you..in another life (maybe).
 
@@ -4954,6 +4967,46 @@ see you..in another life (maybe).
 
 </div>
 </div>
+
+<div log-branch="alter">
+  <input type="checkbox" id="log-day42" class="toggle-input" style="display:none;">
+  
+  <label for="log-day41" class="log-trigger glowing-timeline">
+    <h3>📝 Log Day 42: ..Good bye</h3>
+  </label>
+  
+  <div class="log-content">
+
+
+<t>10:10 AM</t>
+
+I think.. am not okay.
+
+Self hate is back again.
+
+I don't know.
+
+Maybe play some games.
+
+Hmm not realy..
+
+I want to write a story.
+
+See in you. 
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
 <div log-branch="main">
 
@@ -5417,43 +5470,8 @@ Sometimes keeping it inside means we are <span class="phoenix-shatter">breaking 
 ```
 
 
-<shake>lfdlfdslflds</shake>
-
-<secret>gdgdg </secret>
 <shatter>Oh I discovered this effect Gemini made it in early days..
 </shatter>
-
-
-<pop><shake>lfdlfdslflds</shake>
-<bug-thought>
-<ty>gfdgfdgdflgfdlg</ty>
-</bug-thought>
-</pop>
-
-- `fdfdg`
-
-<pop>HMMMgfgdfg;df[;gd[;g]]
-<bug-thought>
-<ty>gfdgfdgdflgfdlg</ty>
-</bug-thought>
-</pop>
-l;llllll
-
-<blockquote><memory>
-<ty>gggggkdkgdkg dkgdkgdk gk fdkgdfk mskmfks m</ty></memory>
-</blockquote>
-
-`sam`
-<code><ty><p>
-lllllllllllllll
-</ty></p>
- </code>
-
-
-
-- `fffff`
-
-
 
 
 <regret>
@@ -5472,7 +5490,6 @@ lllllllllllllll
 <shake>
     GUYS GUYS GUYS!!
 </shake>
-
 <thought>
     <ty>
         I HAVE AN IDEA!!
@@ -5488,10 +5505,10 @@ lllllllllllllll
 <terminal>
 <corrupt data-text="[System Message] ">[System Message]:This log file </corrupt><corrupt data-text="high-density contains">contains high-density </corrupt><corrupt data-text=" █████████ residue">emotional residue.</corrupt>
 <p></p>
+
 <corrupt data-text="🌸 Omar's Room:~$">🌸 Zoli's Room:~$</corrupt><cursor></cursor>
 </terminal>
 
-Shouldn't you at least tell me why did you leave..
 
 <corrupt data-text="The room is us." >The room is forgetting us.</corrupt>
 <corrupt data-text="I was here." >I was happy here..</corrupt>
@@ -5524,11 +5541,8 @@ Shouldn't you at least tell me why did you leave..
 </h3>
 </cen>  
 
-![alt text](/Dairy/assets/png/image-5.png)
-![alt text](/Dairy/assets/png/image-7.png)
-
-<h3>
-<guilt type="day" >Abyss</guilt></h3>
+![alt text](assets/png/image-5.png)
+![alt text](assets/png/image-7.png)
 
 </div>
 </div>

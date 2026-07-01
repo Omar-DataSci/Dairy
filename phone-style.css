@@ -9,9 +9,10 @@ Mobile Branch Experience
 @media (max-width: 1024px) {
 
   body {
-    font-size: 1.9rem ;
-    line-height: 1.7;
-    margin: 0 auto;
+    font-size: 1.25rem ;
+    width:100%;
+    line-height: 1.6;
+    margin: auto;
     padding: 1.5rem;
 }
   /* Remove hover dependence */
@@ -264,7 +265,11 @@ th, td, tr,pre {
 }
 
 .intro-container .intro {
-  font-size: 1.8rem;
+  font-size: 1.25rem;
+}
+
+[block-effect="terminal"] ,terminal{
+    font-size: 1.25rem;
 }
 
 
