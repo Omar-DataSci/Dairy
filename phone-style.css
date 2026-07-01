@@ -260,16 +260,16 @@ p > code:hover, .secret-ink:hover, secret:hover {
 
   
 th, td, tr,pre {
-      font-size: 1.25rem ;
+      /* font-size: 1.25rem ; */
 
 }
 
 .intro-container .intro {
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
 }
 
 [block-effect="terminal"] ,terminal{
-    font-size: 1.25rem;
+    /* font-size: 1.25rem; */
 }
 
 

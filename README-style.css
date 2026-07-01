@@ -124,7 +124,7 @@ Gave the user control. By pausing it on hover, it allow the reader to "catch" th
 /* --- Headings Transition --- */
 h1  {
     color:#c9d1d9;
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
     letter-spacing: 0px;
     /* Set up transition for letter-spacing change */
     transition: letter-spacing 0.4s ease-out, color 0.4s ease-out;
@@ -391,7 +391,7 @@ i{
     color: #ffffff !important;
     padding: 2px 6px;
     border-radius: 4px;
-    font-size: 0.85em;
+    /* font-size: 0.85em; */
     font-weight: bold;
     font-family: monospace;
     overflow: hidden;
@@ -1077,7 +1077,7 @@ memory:hover {
 [block-effect="thought"],bug-thought  {
     display:block;
     font-family: Cascadia Mono;
-    font-size: var(--font-13px);
+    /* font-size: var(--font-13px); */
     background-color: rgba(128, 0, 32, 0.25);
     color: #f8f8f2d7;
     position: absolute;
@@ -1107,7 +1107,7 @@ memory:hover {
     align-items: center;    /* Centers vertically */
     height: 100vh;   ;
     font-family: Cascadia Mono;
-    font-size: var(--font-13px);
+    /* font-size: var(--font-13px); */
     background-color: rgba(128, 0, 32, 0.25);
     color: #f8f8f2d7;
     position: absolute;
@@ -1373,7 +1373,7 @@ log::before {
   display:block;
   /* position: absolute; */
   font-family: 'Cascadia Mono','Courier New', Courier, monospace;
-  font-size: var(--font-13px);
+  /* font-size: var(--font-13px); */
   color: #e6e8e8;
   max-width:fit-content;
   max-height:fit-content;
